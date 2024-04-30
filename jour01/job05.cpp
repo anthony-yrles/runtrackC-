@@ -4,12 +4,12 @@
 
 int main(int argc, char* argv[]) {
 
-    //  First addition one int to another
+    //  First multiply one int to another
     int x = 5;
     int y = 3;
     std::cout << "L'addition de " << x << " * " << y << " est égal à " << (x * y) << std::endl;
 
-    //  Second addition one int to another
+    //  Second multiply one int to another
 
     if (argc > 1) {
         // Put the first argument in an variable as an integer
