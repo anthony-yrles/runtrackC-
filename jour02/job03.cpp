@@ -20,7 +20,7 @@ main() {
         i++;
     }
     // Print the sum
-    std::cout << "Somme: " << somme << std::endl;
+    cout << "Somme: " << somme << endl;
 
     // Do-while loop
     i = 0;
@@ -36,5 +36,5 @@ main() {
         // Check if i is less than 4
     } while (i < 4);
     // Print the sum
-    std::cout << "Somme: " << somme << std::endl;
+    cout << "Somme: " << somme << endl;
 }
