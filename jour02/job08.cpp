@@ -15,14 +15,16 @@ int main() {
 
     // Check if a is less than b
     if (a < b) {
-        //  if Yes, loop for from a to b with increment of 1
-        for (int i = a; i <= b; i++) {
-            cout << i << endl;
+        //  if Yes, loop while from a to b with increment of 1
+        while (a <= b) {
+            cout << a << endl;
+            a++;
         }
-        // if No, loop for from a to b with decrement of 1
+        // if No, loop while from a to b with decrement of 1
     } else {
-        for (int i = a; i >= b; i--) {
-            cout << i << endl;
+        while (a >= b) {
+            cout << a << endl;
+            a--;
         }
     }
 }
