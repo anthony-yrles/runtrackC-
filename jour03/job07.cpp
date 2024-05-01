@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
     // Declare variables
-    int inputUser[10] {};
+    int T[10] {};
     int input;
     int count = 0;
     int biggest = 0;
@@ -15,17 +15,17 @@ int main() {
     do {
         cout << "Entrez 10 entiers : ";
         cin >> input;
-        inputUser[count] = input;
+        T[count] = input;
         count++;
     } while (count < 10);
 
     // Find the biggest integer
-    for (int i : inputUser) {
+    for (int i : T) {
         if (i >= biggest){
             biggest = i;
         };
     }
-    
+
     // Output result
     cout << "Le plus grand entier est : " << biggest;
 }
