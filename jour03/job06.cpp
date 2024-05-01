@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    list<int> inputUser= {};
+    int inputUser[10] {};
     int input;
     int count = 0;
     int supFive = 0;
@@ -13,10 +13,10 @@ int main() {
     do {
         cout << "Entrez 10 entiers : ";
         cin >> input;
-        inputUser.push_back(input);
+        inputUser[count] = input;
         count++;
     } while (count < 10);
-    
+
     for (int i : inputUser) {
         if (i >= 5){
             supFive++;
