@@ -4,37 +4,42 @@ using namespace std;
 
 class Etudiant {
 public:
-    Etudiant(string name, int lifepoints, float defense) : name(name), lifepoints(lifepoints), defense(defense) {}
-    void setName(string name) {
-            this->name = name;
-        }
-
-        void setLifepoints(int lifepoints) {
-            this->lifepoints = lifepoints;
-        }
-
-        void setDefense(float defense) {
-            this->defense = defense;
-        }
-
-        void printEtudiant() const {
-            cout << "Name: " << getName() << "\n";
-            cout << "Lifepoints: " << getLifepoints() << "\n";
-            cout << "Defense: " << getDefense() << "\n";
-        }
-        
+    Etudiant(string name, string fisrtName, int age, int matricule) : name(name), fisrtName(fisrtName), age(age), matricule(matricule) {}
+    void SetName(string name) {
+        this->name = name;
+    }
+    void SetFisrtName(string fisrtName) {
+        this->fisrtName = fisrtName;
+    }
+    void SetAge(int age) {
+        this->age = age;
+    }
+    void SetMatricule(int matricule) {
+        this->matricule = matricule;
+    }
+    void printEtudiant() const {
+        cout << "Name: " << getName() << "\n";
+        cout << "Fisrt Name: " << getFisrtName() << "\n";
+        cout << "Age: " << getAge() << "\n";
+        cout << "Matricule: " << getMatricule() << "\n";
+    }
+    
 private:
     string name;
-    int lifepoints;
-    float defense;
+    string fisrtName;
+    int age;
+    int matricule;
 
     string getName() const {
         return name;
     }
-    int getLifepoints() const {
-        return lifepoints;
+    string getFisrtName() const {
+        return fisrtName;
     }
-    float getDefense() const {
-        return defense;
+    int getAge() const {
+        return age;
+    }
+    int getMatricule() const {
+        return matricule;
     }
 };
