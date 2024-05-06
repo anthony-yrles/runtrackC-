@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>  // Pour utiliser strncpy
+#include <cstring>
 
 int main() {
     // Ask the user for a string
